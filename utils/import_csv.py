@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 def import_csv():
     print("Importando CSV")
     try: 
-        csv = pd.read_csv("ITBI/dataset.csv")
+        csv = pd.read_csv("csv/dataset.csv")
         print("CSV Importado com sucesso.")
         return csv
 
