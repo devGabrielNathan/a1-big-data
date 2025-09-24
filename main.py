@@ -1,10 +1,10 @@
 import matplotlib.pyplot as plt
 import pandas as pd
+from utils.education_and_job import analyze_education_vs_job
 from utils.import_csv import import_csv
 from utils.plotting import stacked_bar
 
 if __name__ == "__main__":
-    DIRECTORY = "outputs/"
     
     print("Camille")
     print("1 - Analisar idade vs salário")
@@ -24,7 +24,7 @@ if __name__ == "__main__":
     
     print("0 - Sair")
 
-    csv: pd.DataFrame = import_csv()
+    dataset: pd.DataFrame = import_csv()
 
     while True:
         option = input("O que deseja fazer? ")
@@ -34,15 +34,7 @@ if __name__ == "__main__":
             case "2":
                 print("[2] Em desenvolvimento...")
             case "3":
-                # Exemplo simples: Top 10 empregos por contagem
-                counts = csv["Job Title"].value_counts().head(10)
-                axis_x = list(counts.index)
-                axis_y = list(counts.values.astype(float))
-                figure_name = "educacao_emprego.png"
-                label = "Contagem"
-                title="Top 10 Empregos por Contagem"
-                stacked_bar(axis_x, axis_y, DIRECTORY, figure_name, label, title)
-                print("Gráfico salvo em outputs/educacao_emprego.png")
+                analyze_education_vs_job(dataset)
             case "4":
                 print("[4] Em desenvolvimento...")
             case "5":
