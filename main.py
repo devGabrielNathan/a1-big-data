@@ -1,8 +1,7 @@
-import matplotlib.pyplot as plt
 import pandas as pd
 from utils.education_and_job import analyze_education_vs_job
 from utils.import_csv import import_csv
-from utils.plotting import stacked_bar
+from utils.gender_and_education import analyze_gender_and_education
 
 if __name__ == "__main__":
     
@@ -38,7 +37,7 @@ if __name__ == "__main__":
             case "4":
                 print("[4] Em desenvolvimento...")
             case "5":
-                print("[5] Em desenvolvimento...")
+                analyze_gender_and_education(dataset)
             case "6":
                 print("[6] Em desenvolvimento...")
             case "7":
