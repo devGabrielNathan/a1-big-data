@@ -11,8 +11,8 @@ def analyze_gender_and_education(dataset):
         axis_y = list(cross_table[education_level].values.astype(float))
         
         figure_name = f"gender_by_{education_level.lower().replace(' ', '_')}.png"
-        label = "Contagem"
-        title = f"Distribuição de Gênero para {education_level}"
+        label = "Quantidade de pessoas"
+        title = f"Distribuição por gênero no nível de educação: {education_level}"
         
         stacked_bar(axis_x, axis_y, figure_name, label, title)
         print(f"Gráfico salvo em outputs/{figure_name}")
