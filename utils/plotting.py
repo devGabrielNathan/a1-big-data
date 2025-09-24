@@ -2,7 +2,7 @@ from os import makedirs, path
 import matplotlib.pyplot as plt
 
 
-def stacked_bar(axis_x, axis_y, directory, figure_name, label, title) -> None:
+def stacked_bar(axis_x, axis_y, figure_name, label, title, directory="outputs") -> None:
 	makedirs(directory, exist_ok=True)
 	output_path = path.join(directory, figure_name)
 	
