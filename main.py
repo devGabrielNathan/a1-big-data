@@ -2,10 +2,11 @@ import pandas as pd
 from utils.education_and_job import analyze_education_vs_job
 from utils.import_csv import import_csv
 from utils.gender_and_education import analyze_gender_and_education
+from utils.salary_by_age import salary_by_age
 
 if __name__ == "__main__":
     
-    print("Camille")
+    print("Camile")
     print("1 - Analisar idade vs salário")
     print("2 - Analisar gênero e salário")
     
@@ -29,7 +30,7 @@ if __name__ == "__main__":
         option = input("O que deseja fazer? ")
         match option:    
             case "1":
-                print("[1] Em desenvolvimento...")
+                salary_by_age(dataset)
             case "2":
                 print("[2] Em desenvolvimento...")
             case "3":
