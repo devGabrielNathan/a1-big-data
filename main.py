@@ -1,6 +1,7 @@
 import os
 from time import sleep
 import pandas as pd
+from utils.map_education_levels import map_education_levels
 from utils.clear_terminal import clear_terminal
 from utils.menu import menu
 from utils.education_and_job import analyze_education_vs_job
@@ -10,7 +11,7 @@ from utils.salary_by_age import salary_by_age
 
 if __name__ == "__main__":
 
-    dataset: pd.DataFrame = import_csv()
+    dataset: pd.DataFrame = map_education_levels(import_csv())
 
     while True:
 
