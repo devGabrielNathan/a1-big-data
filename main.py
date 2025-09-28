@@ -1,6 +1,7 @@
 import os
 from time import sleep
 import pandas as pd
+from utils.education_and_salary import analyze_education_and_salary
 from utils.map_education_levels import map_education_levels
 from utils.clear_terminal import clear_terminal
 from utils.menu import menu
@@ -31,7 +32,7 @@ if __name__ == "__main__":
             case "3":
                 analyze_gender_and_education(dataset)
             case "4":
-                print("[4] Em desenvolvimento...")
+                analyze_education_and_salary(dataset)
             case "0":
                 print("Saindo...")
                 break
