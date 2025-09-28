@@ -7,11 +7,12 @@ Este projeto de Big Data tem como objetivo analisar o mercado imobiliário do Ri
 
     Itallo Vidal - Matrícula: 1230114462
 
-    [Nome do Aluno 2] - Matrícula: [Número da Matrícula 2]
+    GABRIEL NATHAN DOS SANTOS PIRES - Matrícula: 1230118841
 
-    [Nome do Aluno 3] - Matrícula: [Número da Matrícula 3]
+    CAMILE PIMENTA MONTEIRO - Matrícula: 1240201525
 
-    [Adicionar outros nomes se necessário]
+    LEONARDO PATROCINIO SILVA - Matrícula: 1230206925
+
 
 2. Fonte de Dados
 
